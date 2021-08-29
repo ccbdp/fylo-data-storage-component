@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; 
+}
+
+:root{
+    --primary-color-pale-blue: hsl(243, 100%, 93%);
+    --primary-color-grayish-blue: hsl(229, 7%, 55%);
+    --primary-color-dark-blue: hsl(228, 56%, 26%);
+    --primary-color-very-dark-blue: hsl(229, 57%, 11%);
+}
+
+html{
+    
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    min-height: 100vh;
+    
+}
+.content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color-dark-blue);
+    margin-top: 10em;
+    padding: 2em;
+    border-radius: 10px 100px 10px 10px;
+}
+
+.two{
+    margin-top: 1em;
+    background-color: var(--primary-color-dark-blue);
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.logo{
+    width: 50%;
+}
+.icons{
+   display: flex;
+   margin-top: 2em;
+
+}
+.icon{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    background-color: var(--primary-color-very-dark-blue);
+    padding: .7em;
+    margin-right: 1em;
+    border-radius: 7px;
+
+}
+
+h1{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--primary-color-pale-blue);
+    
+}
+h1 span{
+    font-weight: 700;
+    
+}
+h2{
+    color: var(--primary-color-pale-blue);
+}
+
+
+.background-gradient{
+    margin: 1em 0;
+    background-color: hsla(229, 57%, 11%, 0.678);
+    height: 18px;
+    width: 270px;
+    border-radius: 50px;
+    position: absolute;
+
+}
+
+.gradient{
+    margin: 1.15em .2em;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    background-color: hsla(229, 57%, 11%, 0.678);
+    height: 14px;
+    width: 200px;
+    border-radius: 50px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+       
+}
+
+.dot{
+    margin: 1.2em 0 0 11.8em ;
+    height: 12px;
+    background-color: white;
+    width: 12px;
+    border-radius: 50%;
+    position: relative;
+}
+.limit{
+    display: flex;
+    font-weight: 700;
+    font-size: 10px;
+    justify-content: space-between;
+    margin: .8em 0;   
+}
+
+h3{
+    display: flex;
+    color: var(--primary-color-very-dark-blue);
+    font-weight: 700;
+    font-size: 42px;
+    background-color: white;
+    padding: .3em .6em;
+    width: max-content;
+    margin: auto;
+    border-radius: 10px;
+    align-self: center;   
+}
+
+h3 span{
+    display: flex;
+    color: var(--primary-color-grayish-blue);
+    font-size: 14px;
+    font-weight: 400;
+    align-self: center;
+    padding-left: .8em;
+}
+
+.content{
+    position: relative;
+}
+.left{
+    position: absolute;
+    top: 58%;
+    right: 25%;
+}
+.attribution{
+    margin-top: 5em;
+}
+
+@media screen and (min-width: 576px){
+
+    .background-gradient{
+        margin: 1em 0;
+        width: 450px;
+    }
+    
+    .gradient{
+        margin: 1.12em .2em;
+        width: 320px;
+    }
+    
+    .dot{
+        margin: 1.15em 0 0 19.3em ; 
+    }
+    
+    .content{
+        position: relative;
+    }
+    .left{
+        position: absolute;
+        top: 67%;
+        right: 33%;
+    }
+    .attribution{
+        margin-top: 7em;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .background-gradient{
+        margin: 1em 0;
+        width: 620px;
+    }
+    
+    .gradient{
+        margin: 1.12em .2em;
+        width: 500px;
+    }
+    
+    .dot{
+        margin: 1.17em 0 0 30.55em ; 
+    }
+    
+    .content{
+        position: relative;
+    }
+    .left{
+        position: absolute;
+        top: 70%;
+        right: 37%;
+    }
+    .attribution{
+        margin-top: 7em;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    html{
+        background: var(--primary-color-very-dark-blue);
+        background-image: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        
+    }
+    
+    .content{
+        flex-direction: row;
+        margin-top: 3em;
+    }
+    .background-gradient{
+        margin: 1em 0;
+        width: 380px;
+    }
+    .gradient{
+        margin: 1.12em .2em;
+        width: 300px;
+    }
+    .dot{
+        margin: 1.17em 0 0 18.1em ; 
+    }
+    
+    .two{
+        margin: 13em 0 0 2em;
+        height: 150px;
+        width: 450px;
+    }
+
+    .one{
+        margin-top: 11em;
+        padding-right: 5em;
+    }
+    .left{
+        top: 35%;
+        right: 17.5%;
+    }
+    h1{
+        text-align: start;
+    }
+
+    h3{  
+        font-size: 32px;   
+        border-radius: 10px 10px 0 10px;
+    }
+    
+    h3 span{
+        font-size: 12px;
+    }
+
+    .triangle{
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 1px solid transparent;
+        border-top: 35px solid white;
+        position: absolute;
+        left: 79.3%;
+        top: 42%;
+        
+    }
+    
+}
+
+@media screen and (min-width: 1440px){
+    .left{
+        top: 30%;
+        right: 25%;
+    }
+    .triangle{
+        left: 73%;
+        top: 35%;
+        
+    }
+
+}
